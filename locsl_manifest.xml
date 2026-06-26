@@ -3,7 +3,7 @@
 
   <!-- Device Tree الصح -->
   <project
-    name="A34-PeaceZone/lineage_device_samsung_a34-e"
+    name="mkpromvp/android_device_samsung_a34x-e"
     path="device/samsung/a34x"
     remote="github"
     revision="lineage-23.2-a" />
@@ -51,4 +51,11 @@
   remote="github"
   revision="main" />
 
+  <!-- Build/Soong (with date/tar PATH tool fix) -->
+  <remove-project name="LineageOS/android_build_soong" />
+  <project
+    name="mkpromvp/android_build_soong"
+    path="build/soong"
+    remote="github"
+    revision="lineage-23.2" />
 </manifest>
